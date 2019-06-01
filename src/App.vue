@@ -1,15 +1,17 @@
 <template>
   <div id="app">
+    <Header></Header>
     <Todos v-bind:todos="todos" v-on:del-todo='deleteTodo'/>
   </div>
 </template>
 
 <script>
 import Todos from './components/Todos'
+import Header from './components/layouts/Header'
 export default {  
   name: "app",
   components: {
-    Todos
+    Todos, Header
   },
   data(){
     return{
