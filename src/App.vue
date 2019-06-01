@@ -1,14 +1,15 @@
 <template>
   <div id="app">
+    <Todos v-bind:todos="todos"/>
   </div>
 </template>
 
 <script>
-
-export default {
+import Todos from './components/Todos'
+export default {  
   name: "app",
   components: {
-
+    Todos
   },
   data(){
     return{
